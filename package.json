@@ -1,0 +1,29 @@
+{
+  "name": "web3swift_jsproxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify  index.js -o dist/Web3Swift.js",
+    "bundle": "browserify index.js -d | uglifyjs -cm -o dist/Web3Swift.js",
+    "watch": "watchify  index.js -o dist/Web3Swift.js --debug --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.0.0-beta2",
+    "web3-provider-engine": "^13.6.5",
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browserify": "^15.2.0",
+    "uglify-es": "^3.3.10",
+    "uglify-js": "^3.3.10",
+    "watchify": "^3.10.0"
+  }
+}
