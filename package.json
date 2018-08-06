@@ -10,7 +10,7 @@
     "watch": "watchify  index.js -o dist/Web3Swift.js --debug --verbose"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "web3": "^1.0.0-beta2",
     "web3-provider-engine": "^13.6.5",
